@@ -1,0 +1,260 @@
+body{
+    background: url("../image/background-image.jpg");
+    background-size: cover; 
+}
+
+/* 
+ //////////////////////////////////////
+  =nav   
+ ////////////////////////////////////// 
+*/
+nav{
+    margin:  10px 0;
+}
+nav ul{
+    list-style-type: none;
+    padding:0;
+    margin:10px;
+    text-align: center;
+}
+nav ul li{
+    display: inline;
+}
+nav ul li a{
+    color:#fff;
+    display: inline-block;
+    text-decoration: none;
+    padding:10px 20px;
+    margin: 0;
+}
+nav ul li a:hover{
+    text-decoration: none;
+}
+a.brand{
+    font-size:28px;
+    font-weight:bold;
+    font-family: 'EngraversGothic BT';
+    padding:0;
+    margin:0 20px;
+    float:left;
+}
+a.brand:hover{
+    color:#fff;
+}
+.login-sign-up{
+    float:right;
+    margin:0 20px;
+}
+.login, .sign-up{
+    background:linear-gradient(90deg, #533c7c, #1088b0);    
+    color:#fff;
+    box-shadow: 0 4px 8px rgba(0,0,0, .5);
+}
+.login-sign-up a:hover{
+    color:#fff;
+    box-shadow: 0 8px 16px rgba(0,0,0, .5);
+}
+.login{
+    border-radius:50px 0 0 50px;
+    margin:0;
+}
+.sign-up{
+    border-radius:0 50px 50px 0;
+    margin:0;
+}
+.selected{
+    background: #fff;
+    color:#533c7c;
+}
+.selected:hover{
+    color:#533c7c !important;
+}
+.mainLinks{
+ display: inline-block;
+ padding-bottom:5px;
+ margin: 0 auto;
+}
+.mainLinks a{
+    display: inline-block;
+}
+.mainLinks a:hover{
+    color:#fff;
+    border-bottom: 2px solid #fff;
+}
+
+/* 
+ //////////////////////////////////////
+  =mainCaption   
+ ////////////////////////////////////// 
+*/
+
+.mainCaption{
+    position:relative;
+}
+
+.captionText{
+    position: absolute;
+    top:10em;
+}
+.captionText h1{
+    color:#fff;
+    font-family: "Century Gothic";
+    font-size: 60px;
+    font-weight: bolder;
+}
+.captionText p{
+    color:#fff;
+    font-size:30px;
+}
+.demarkation{
+    position: absolute;
+    top:4em;
+    right:2em;
+    width:3px;
+    height:500px;
+    background: #fff;
+}
+a.action{
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    width:70%;
+    display: block;
+    padding:20px 30px;
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    transition: .5s;
+}
+.arrow{
+    display: none;
+    padding-left: 20px;
+    font-size:15px;
+    color: #533c7c;
+    transition: .5s;
+}
+a.action:hover{
+    background-color: #fff;
+    color:#533c7c;
+    padding-left: 15px;
+}
+a.action:hover .arrow{
+    display: inline-block;
+}
+
+/* 
+ //////////////////////////////////////
+  =form   
+ ////////////////////////////////////// 
+*/
+.loginForm{
+    position:relative;
+}
+.loginForm form{
+    width: 80%;
+    position: absolute;
+    top:12em;
+}
+input[type=text], input[type=password]{
+    /* background-color: transparent;
+    border:3px solid #fff; */
+    background: rgba(0,0,0,.5);
+    border:none;
+    padding:15px;
+    color:#fff;
+}
+input[type=text]:focus, input[type=password]:focus{
+    color:#533c7c;
+    
+}
+
+form button{
+    border:3px solid #fff;
+    border-radius:50px;
+    background:transparent;
+    color:#fff;
+    padding:10px 20px;
+    width:50%;
+    transition: .5s ease-in;
+    cursor:not-allowed;
+}
+
+form button:hover{
+    background: #fff;
+    color:#533c7c;
+}
+.pr{
+    position:relative;
+}
+.forgotPassword{
+    margin:10px 0;
+}
+.forgotPassword a{
+    color:#fff;
+}
+
+.forgotPassword a:hover{
+    text-decoration: none;
+    color:#fff;
+}
+
+
+/* 
+ //////////////////////////////////////
+  =notification   
+ ////////////////////////////////////// 
+*/
+.formNotification{
+    width: 120px;
+    background-color: #fff;
+    color: #533c7c;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    font-size:12px;
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    top: 5px;;
+    left: 120%;
+    margin-left: -60px;
+    display: none;
+}
+
+.formNotification::after{
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%; /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+}
+
+.makeVisible{
+    color:#1088b0;
+    position: absolute;
+    z-index: 1;
+    top: 13px;;
+    left: 110%;
+    margin-left: -60px;
+    cursor:pointer;
+}
+
+.alert{
+    background: #fff;
+    color:#533c7c;
+    font-size: 14px;
+    padding:20px;
+    display: none;
+    position: relative;
+    border-left:10px solid #c20909;
+}
+/* .alert .close{
+    position:absolute;
+    z-index: 1;
+    top:20px;
+    left:90%;
+    color:#533c7c;
+} */

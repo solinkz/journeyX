@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>login | user </title>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+  
+    <nav>
+        <ul id="mainNav">
+            <li><a href="#" class="brand">traveler|X</a></li>
+            <ul class="mainLinks">
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">facts</a></li>
+            </ul>
+            <ul class="login-sign-up">
+                <li><a href="#" class="login selected">login</a></li>
+                <li><a href="#" class="sign-up">sign up</a></li>
+            </ul>
+        </ul>
+    </nav>
+
+    <main id="main">
+       
+        <div class="container">
+            <div class="row">
+                <div class="col-7">
+                    <div class="mainCaption">
+                        <div class="captionText">
+                            <h1>Begin your Journey</h1>
+                            <p>find out what awaits you</p>
+                            <a href="#" class="action">travel gallery<i class="fa fa-chevron-right arrow"></i></a>
+                        </div>
+                        <div class="demarkation"></div>
+                    </div>
+                    
+                </div>
+                <div class="col-5">
+                    <div class="loginForm" >
+                        <form action="journey.html" method="get" id="form">
+                            <div class="form-group pr">
+                                <input type="text" name="username" class="form-control"id="username" placeholder="username" required>
+                                <!-- <span class="formNotification">username cannot be empty</span> -->
+                            </div>
+                            <div class="form-group pr">
+                                <input type="password" name="password" class="form-control"id="password" placeholder="password" required>
+                                <!-- <span class="formNotification">username cannot be empty</span> -->
+                                <span class="makeVisible"><i class="fa fa-eye"></i></span>
+                            </div>
+                            <button type="submit" id="submit" disabled>login</button>
+                            <p class="forgotPassword"><a href="#">click here for forgotten password</a></p>
+                            <p class="alert">username and password does not match</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
